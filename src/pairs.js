@@ -20,7 +20,7 @@ export default class Pairs extends React.Component {
   render() {
     let pairOptions = this.props.pairs.map((pair, index) => {
       // Construct a standard base/quote string from the symbols
-      const text = pair.baseToken.symbol + "/" + pair.quoteToken.symbol;
+      const text = "Buy or Sell --" + pair.baseToken.symbol + "-- with --" + pair.quoteToken.symbol + "--";
       return (
         <option value={index} key={index}>
           {" "}
