@@ -34,7 +34,8 @@ class App extends React.Component {
       });
       this.setState({ missingWeb3: true });
     }
-    let pairs = await this.ocean.marketData.tokenPairs();
+    // Phase 3 - 2
+    let pairs = [];
     this.setState({ loading: false, pairs });
     this.setPair(0);
   }
