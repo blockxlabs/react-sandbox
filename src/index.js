@@ -18,8 +18,8 @@ class App extends React.Component {
     super(props);
     this.setPair = this.setPair.bind(this);
     this.api = {
-      key: "41429b7da13dcc501d595625acd2bfad ",
-      secret: "6e329521afb85fbc9e2933fb1f8675d344c01390f7de8bb3e7a091fa4e80b3c5"
+      key: "fdc3584ee4fbc65c78e41b8f671359e4",
+      secret: "a87f1f4c21c8cb6ad1cd8797b77998f6b482a760fe2413185d916d2b54860363"
     };
     this.state = {};
   }
