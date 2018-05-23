@@ -18,24 +18,16 @@ class App extends React.Component {
     super(props);
     this.setPair = this.setPair.bind(this);
     this.api = {
-      key: "fdc3584ee4fbc65c78e41b8f671359e4",
-      secret: "a87f1f4c21c8cb6ad1cd8797b77998f6b482a760fe2413185d916d2b54860363"
+      // key: "fdc3584ee4fbc65c78e41b8f671359e4",
+      // secret: "a87f1f4c21c8cb6ad1cd8797b77998f6b482a760fe2413185d916d2b54860363"
+      // Phase 3 - 1
     };
     this.state = {};
   }
 
   async componentWillMount() {
     if (window.web3) {
-      this.web3Provider = window.web3.currentProvider;
-      this.ocean = await createOcean({
-        api: this.api,
-        web3Provider: this.web3Provider
-      });
-      window.web3.version.getNetwork((err, netId) => {
-        this.setState({
-          networkId: netId
-        });
-      });
+      // Phase 3 - 2
     } else {
       this.ocean = await createOcean({
         api: this.api
